@@ -1,25 +1,50 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>I love you Mom!</title>
-    </head>
-    <body style = "background-color: rgb(81, 95, 139);">
+<<<<<<< HEAD
+  <head>
+    <meta charset="utf-8">
+    <title>Canvas</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+    </style>
+  </head>
+  <body>
+    <canvas class="myCanvas">
+
+    </canvas>
     <script>
-       // document.body.innerHTML = "I love you Mom!";
+    const canvas = document.querySelector('.myCanvas');
+    const width = canvas.width = window.innerWidth;
+    const height = canvas.height = window.innerHeight;
+
+    const context = canvas.getContext('2d');
+    context.fillStyle = 'rgb(180, 60, 60)';
+    context.fillRect(100, 100, width / 2, height / 2);
+
+    context.fillStyle = 'rgb(40, 90, 190)';
+    context.fillRect(120, 120, 50, 50);
+
+
     </script>
-    <table border="1">
-        <tr>
-            <td>Harding</td>
-            <td>And</td>
-            <td>Associates</td>
-        </tr>
-        <tr>
-            <td>New</td>
-            <td>Website</td>
-            <td>Coming</td>
-            <td>Soon™</td>
-        </tr>
-    </table>
+  </body>
+=======
+    <head>
+    <link rel = "stylesheet" type = "text/css" href = "app.css">
+    </head>
+    <body>
+        <h1>fonts demo</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+            esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, 
+            sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
     </body>
+>>>>>>> 054d34611aa0f8867c2480ddd13fbfcd784dd4bf
 </html>
