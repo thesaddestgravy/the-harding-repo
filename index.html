@@ -3,30 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>Canvas</title>
-    <style>
-        body {
-            margin: 0;
-            overflow: hidden;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <canvas class="myCanvas">
+    <div class="prompt">
+      <input type="text" name="subtotal" placeholder="Subtotal">
+      <input type="text" name="tip" placeholder="Tip">
+    </div>
+    <button>Calculate Tip %!</button>
 
-    </canvas>
-    <script>
-    const canvas = document.querySelector('.myCanvas');
-    const width = canvas.width = window.innerWidth;
-    const height = canvas.height = window.innerHeight;
+    <h3>Your tip percent is</h3>
 
-    const context = canvas.getContext('2d');
-    context.fillStyle = 'rgb(180, 60, 60)';
-    context.fillRect(100, 100, width / 2, height / 4);
-
-    context.fillStyle = 'rgb(0, 0, 255)';
-    context.fillRect(120, 120, 50, 50);
+    <script src="index.js"></script>
 
 
-    </script>
   </body>
 </html>
