@@ -1,7 +1,7 @@
-document.querySelector("button").addEventListener("click", calculateTip);
+const form = document.querySelector(".form-group");
+const subtotal = document.querySelector("#subtotal");
 
-function calculateTip() {
-    var subtotal = document.querySelector("input").value;
-    var tip = document.querySelectorAll("input")[1].value;
-    alert("The tip percent is " + (tip / subtotal) * 100 + "%");
-}
+form.addEventListener("submit", e => {
+    e.preventDefault();
+    subtotal.value = subtotal.value.toUpperCase();
+});
