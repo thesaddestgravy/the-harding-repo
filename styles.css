@@ -5,7 +5,8 @@ body {
 }
 
 .pink {
-    background: pink;
+    padding: 5%;
+    background :#1f4068;
     height: 100%;
 }
 
@@ -13,10 +14,22 @@ h1 {
     text-align: center;
 }
 
+ul {
+    list-style-type: none;
+    background-color: #162447;
+}
+
+li {
+    padding: 5px;
+    border: blue;
+    color: white;
+}
+
 #submitbtn {
     text-align: center;
     width: 400px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 25px;
     display: block;
 }
